@@ -6,6 +6,7 @@
 pkg.install() {
   brew install yarn
   yarn global add ntl git-run gh tldr eslint prettier
+  npm login
 }
 
 # pkg.push() {
