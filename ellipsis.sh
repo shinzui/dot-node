@@ -3,9 +3,16 @@
 # shinzui/node ellipsis package
 
 # The following hooks can be defined to customize behavior of your package:
+
+pkg.link() {
+  #do nothing
+  echo ""
+}
+
 pkg.install() {
   brew install yarn
   yarn global add ntl git-run gh tldr eslint prettier
+  cp npmrc ~/.npmrc
   npm login
 }
 
