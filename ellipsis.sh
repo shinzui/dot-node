@@ -11,9 +11,12 @@ pkg.link() {
 
 pkg.install() {
   brew install yarn
+  brew install python@2
   yarn global add ntl git-run gh tldr eslint prettier
   cp npmrc ~/.npmrc
   npm login
+  npm config set python python2.7
+  yarn config set python python2.7
 }
 
 # pkg.push() {
